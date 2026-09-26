@@ -7,7 +7,7 @@ public class SmartParkingSystem {
 
     static Scanner scanner = new Scanner(System.in);
 
-    // Method to park a vehicle
+    
     static void parkVehicle() {
 
         System.out.print("Enter vehicle number: ");
@@ -20,7 +20,7 @@ public class SmartParkingSystem {
         int type = scanner.nextInt();
         scanner.nextLine();
 
-        // Find an empty parking spot
+        
         for (int i = 0; i < 5; i++) {
 
             if (vehicleNumbers[i] == null) {
@@ -38,7 +38,7 @@ public class SmartParkingSystem {
         System.out.println("Sorry! Parking is full.");
     }
 
-    // Method to remove a vehicle
+    
     static void removeVehicle() {
 
         System.out.print("Enter vehicle number: ");
@@ -60,7 +60,7 @@ public class SmartParkingSystem {
         System.out.println("Vehicle not found.");
     }
 
-    // Method to display parking status
+    
     static void displayStatus() {
 
         System.out.println("\n===== PARKING STATUS =====");
